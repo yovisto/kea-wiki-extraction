@@ -10,6 +10,7 @@ The following is extracted:
 - **Labels** for entities
 - **Links** between entities
 - **Norm data** (e.g. GND, VIAF, etc.)
+- **Categories** 
 
 The labels are generated from the article name, anchor texts of links between 
 articles, redirects and disambiguation pages. The links are extracted e.g. to build a PageLink graph. 

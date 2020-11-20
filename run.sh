@@ -1,2 +1,2 @@
 
-docker run -v `pwd`/work:/work ubuntu bash /work/wiki-extraction.sh
+docker run -v `pwd`/work:/work ubuntu:18.04 bash /work/wiki-extraction.sh

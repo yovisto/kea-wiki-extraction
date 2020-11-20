@@ -85,7 +85,7 @@ cat tmp/links_left.txt tmp/links_right.txt tmp/out.txt | awk '{$1=$1 ; print}' |
 
 #extract normdata
 grep "<title\|{{Normdaten" dewiki-latest-pages-articles.xml |  grep -B1 "{{Normdaten" | awk '{$1=$1 ; print}' > tmp/norm_raw.txt 
-cat tmp/norm_raw.txt | awk '{if ( substr($1,0,7) == "<title>") { t = $0 } else { print  t " " $0 }}' | grep -v "\-\-" |sed 's/<title>//g' |sed 's/ /_/g' |sed 's/<\/title>_{{Normdaten|/ /g' | sed 's/}}//g' > normdata.txt
+cat tmp/norm_raw.txt | awk '{if ( substr($1,0,8) == "<title>") { t = $0 } else { print  t " " $0 }}' | grep -v "\-\-" |sed 's/<title>//g' |sed 's/ /_/g' |sed 's/<\/title>_{{Normdaten|/ /g' | sed 's/}}//g' > normdata.txt
 
 grep 'TYP=p' normdata.txt | awk '{print $1}' > tmp/persons.txt
 cat tmp/persons.txt |sed 's/_/ /' | awk '{print $1 "_" $2 " "  $2 "_" $1}' > tmp/reverse-persons.txt

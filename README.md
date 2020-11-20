@@ -3,7 +3,7 @@
 
 This shell script extracts various information from the Wikipdia which is needed by our entity linking tool.
 
-The script is based on the German language dumps. 
+The script is based on the **German** language dumps. 
 
 The following is extracted:
 

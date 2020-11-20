@@ -12,12 +12,13 @@ The following is extracted:
 - **Norm data** (e.g. GND, VIAF, etc.)
 - **Categories** 
 
-The labels are generated from the article name, anchor texts of links between 
-articles, redirects and disambiguation pages. The links are extracted e.g. to build a PageLink graph. 
+The labels are generated from the article names, anchor texts of links between 
+articles, redirects and disambiguation pages. 
 
-For compatibility reasons we're running the script in an Ubuntu Docker container (cf. `run.sh`). The actual script `wiki-extraction.sh` can be found in the `work` directory.
+We're running the script in an Ubuntu Docker container (cf. `run.sh`). 
+The actual script `wiki-extraction.sh` can be found in the `work` directory.
 
-After running `run.sh` the following data will be output
+After running `run.sh` the following data will be output:
 
 - ``labels.txt``containing the labels: The first column represents the entity, the second column represets the label. The columns are separated by whitespace. Whitespace within each item is replaced by underscore. 
 - ``links.txt`` contains the links between entities. The columns are separated by whitespace.

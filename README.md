@@ -1,5 +1,5 @@
 
-# kea-wiki-extraction
+# KEA Wiki Extraction
 
 This shell script extracts various information from the Wikipdia which is needed by our entity linking tool.
 
@@ -15,7 +15,7 @@ The following is extracted:
 The labels are generated from the article names, anchor texts of links between 
 articles, redirects and disambiguation pages. 
 
-We're running the script in an Ubuntu Docker container (cf. `run.sh`). 
+We're running the script in an **Ubuntu Docker** container (cf. `run.sh`). 
 The actual script `wiki-extraction.sh` can be found in the `work` directory.
 
 After running `run.sh` the following data will be output:
